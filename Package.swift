@@ -8,10 +8,9 @@ let package = Package(
     platforms: [.iOS("15.0")],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(name: "OpenSSL", targets: ["OpenSSL"]),
         .library(
             name: "NFCPassportReader",
-            targets: ["NFCPassportReader"]),
+            targets: ["NFCPassportReader", "OpenSSL"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
