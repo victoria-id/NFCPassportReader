@@ -247,7 +247,7 @@ extension PassportReader : NFCTagReaderSessionDelegate {
         }
     }
     
-    func updateReaderSessionMessage(alertMessage: NFCViewDisplayMessage ) {
+    public func updateReaderSessionMessage(alertMessage: NFCViewDisplayMessage ) {
         self.readerSession?.alertMessage = self.nfcViewDisplayMessageHandler?(alertMessage) ?? alertMessage.description
     }
 }
